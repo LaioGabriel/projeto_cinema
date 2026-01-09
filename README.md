@@ -89,7 +89,7 @@ yarn dev
 
 A aplicação ficará disponível em:
 
-👉 **[http://localhost:3000](http://localhost:3000)**
+👉 **[https://projetocinema.netlify.app](https://projetocinema.netlify.app)**
 
 ---
 
