@@ -1,20 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  /* Light gray background */
-  --foreground: #1e293b;
+  --background: #ffffff;
+  /* Pure white background */
+  --foreground: #073175;
   /* Dark slate text */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Optional: Keep dark mode support or force light if requested. 
-       User asked for "light theme", so I'll default to light but keep these as backup or override them to be light as well if they want *only* light.
-       For now, let's override the dark media query to ensure it stays light as requested, or just make the default light and let the user deciding. 
-       Actually, user said "give it a light theme style". I will assume they want it to look light. */
-    --background: #f8fafc;
-    --foreground: #1e293b;
+   
+    --background: #ffffff;
+    --foreground: #0f48a3;
   }
 }
 
