@@ -109,13 +109,7 @@ npm start
 
 ---
 
-## 🌐 Deploy
 
-O deploy pode ser feito facilmente utilizando a plataforma **Vercel**, que possui integração nativa com projetos Next.js:
-
-👉 [https://vercel.com/](https://vercel.com/)
-
----
 
 ## ⭐ Possíveis melhorias futuras
 
