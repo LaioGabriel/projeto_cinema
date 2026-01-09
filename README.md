@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Projeto Cinema
 
-## Getting Started
+Um projeto web desenvolvido com **Next.js** para gerenciar e exibir informações relacionadas a um cinema, como filmes, sessões e conteúdos visuais. Este repositório contém o front-end completo da aplicação.
 
-First, run the development server:
+---
+
+## 🧠 Sobre o projeto
+
+O **Projeto Cinema** foi criado como uma aplicação web moderna utilizando **Next.js**, servindo como base para um sistema de cinema. Ele foi desenvolvido com foco em organização, escalabilidade e boas práticas de desenvolvimento front-end.
+
+Funcionalidades atuais e/ou planejadas incluem:
+
+* 📽️ Listagem de filmes
+* 🧭 Navegação entre páginas
+* 📱 Layout responsivo
+* 🧱 Estrutura preparada para integração com APIs e backend futuramente
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+Principais tecnologias e ferramentas usadas no projeto:
+
+* **Next.js** — Framework React com suporte a SSR e SSG
+* **React** — Biblioteca para construção da interface
+* **TypeScript** — Tipagem estática para maior segurança
+* **CSS / CSS Modules / Tailwind (se aplicável)** — Estilização
+* **Node.js** — Ambiente de execução
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+📦 projeto_cinema
+ ┣ 📂 app            # Páginas e componentes principais
+ ┣ 📂 public         # Arquivos estáticos (imagens, ícones, etc.)
+ ┣ 📜 .gitignore
+ ┣ 📜 next.config.ts
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+ ┗ 📜 tsconfig.json
+```
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de rodar o projeto, certifique-se de ter instalado:
+
+* Node.js (versão 14 ou superior)
+* npm ou yarn
+
+---
+
+## 📥 Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/LaioGabriel/projeto_cinema.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd projeto_cinema
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn
+```
+
+---
+
+## ▶️ Executando o projeto
+
+Para rodar o projeto em ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação ficará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 **[http://localhost:3000](http://localhost:3000)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Build para produção
 
-To learn more about Next.js, take a look at the following resources:
+Para gerar o build de produção:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para iniciar a aplicação após o build:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Deploy
+
+O deploy pode ser feito facilmente utilizando a plataforma **Vercel**, que possui integração nativa com projetos Next.js:
+
+👉 [https://vercel.com/](https://vercel.com/)
+
+---
+
+## ⭐ Possíveis melhorias futuras
+
+Algumas ideias para evolução do projeto:
+
+* Integração com API de filmes (ex: TMDB)
+* Sistema de login e autenticação
+* Compra e reserva de ingressos
+* Painel administrativo
+* Sistema de busca e filtros
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/minha-feature`)
+3. Commit suas alterações (`git commit -m 'Minha nova feature'`)
+4. Faça push para a branch (`git push origin feature/minha-feature`)
+5. Abra um Pull Request
+
+---
+
+## 🧑‍💻 Autor
+
+Desenvolvido por **Laio Gabriel**.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**. Sinta-se à vontade para usar, estudar e modificar.
