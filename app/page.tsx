@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>  
-    <Navbar title="Cineminha só o pips" />
+    <Navbar title="Cineminha só o pitel" />
     <MovieList />
     </>
   );
