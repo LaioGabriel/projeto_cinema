@@ -1,18 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  /* Pure white background */
-  --foreground: #073175;
-  /* Dark slate text */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-   
-    --background: #ffffff;
-    --foreground: #0f48a3;
-  }
+  --background: #020617; /* Deep midnight blue */
+  --foreground: #f8fafc; /* Ghost white */
+  --accent: #3b82f6; /* Bright blue for accents */
 }
 
 body {

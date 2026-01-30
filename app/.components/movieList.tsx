@@ -1,47 +1,38 @@
-'use client'
-import axios from "axios";
-import { useState, useEffect } from "react";
-import { Movie } from "../.types/Movie";
-import Card from "./card";
+import { useMovies } from "../.hooks/useMovies";
+import MovieGrid from "./movieGrid";
 
+interface MovieListProps {
+    searchQuery?: string;
+    category?: string;
+}
 
-export default function MovieList() {
-    const [movies, setMovies] = useState<Movie[]>([])
+export default function MovieList({ searchQuery, category }: MovieListProps) {
+    const { movies, loading, error } = useMovies(searchQuery, category);
 
-    useEffect(() => {
-        getMovies();
-    }, []);
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center min-h-[400px]">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#073175]"></div>
+            </div>
+        );
+    }
 
-    const getMovies = () => {
-        axios({
-            method: 'get',
-            url: 'https://api.themoviedb.org/3/discover/movie',
-            params: {
-                api_key: process.env.NEXT_PUBLIC_TMDB_API_KEY,
-                language: 'pt-BR'
-            }
-        }).then((response) => {
-            setMovies(response.data.results)
-        }).catch(err => {
-            console.log(err)
-        });
+    if (error) {
+        return (
+            <div className="flex flex-col items-center justify-center min-h-[400px] text-red-500 gap-4">
+                <p className="text-xl font-semibold">{error}</p>
+                <p className="text-sm text-slate-500">Ocorreu um problema ao carregar os filmes.</p>
+            </div>
+        );
     }
 
     return (
-        console.log(movies),
-        <div className="flex justify-center">
-
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-                {movies.map((movie) => (
-                    <Card
-                        key={movie.id}
-                        movie={movie}
-
-                    />
-                ))}
-
-            </div>
+        <div className="flex flex-col items-center">
+            <MovieGrid
+                movies={movies}
+                searchQuery={searchQuery}
+                category={category}
+            />
         </div>
     );
-
 }
